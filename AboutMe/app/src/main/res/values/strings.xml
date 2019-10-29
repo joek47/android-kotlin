@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="bang_bang">Bang Bang</string>
+    <string name="my_name">My Name</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio_string">Hello! I am Bang.
+        \n\nI am 20 months old. I love to mum mum. I like trains. I have Thomas but no friends.
+        Luckily, I also have Doraemon train.
+
+        \n\nMy trains run on blue tracks and also run battery. The trains run in circles. Sometimes
+        I will bring the trains out and let them run on the mat.
+
+        \n\nMy grandmother takes good care of me. She makes sure I am clean everyday. She will showe
+        r me and change my diaper. That\'s why my favourite number is 99.
+
+        \n\nMy second favourite number is 3636.
+
+        \n\nPlarail is a long-running series of railroad toys which originated in Japan more than
+        50 years ago. Children can connect the rails and add scenery parts in any way they like,
+        then run the trains on the tracks for unlimited hours of play.
+
+        \n\nPlarail is not the type of toy that children play with only once. They can build layouts
+        limited only by their own imagination, then take their creation apart and redesign it, again
+        and again. Plarail expands to offer challenges and fun for children at various stages of
+        development, making Plarail a toy which can be enjoyed for many years.
+    </string>
+    <string name="android_face">Android face</string>
+    <string name="what_is_your_nickname">What is your nickname?</string>
+    <string name="done">Done</string>
+</resources>

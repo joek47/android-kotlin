@@ -1,0 +1,59 @@
+<!--The activity_main.xml is a layout file available in res/layout directory,
+that is referenced by your application when building its interface. You will
+modify this file very frequently to change the layout of your application.-->
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    This is an example of simple RelativeLayout which we will study in a
+separate chapter. The TextView is an Android control used to build the GUI and
+it have various attributes like android:layout_width, android:layout_height etc
+which are being used to set its width and height etc.. The @string refers
+to the strings.xml file located in the res/values folder. Hence,
+@string/hello_world refers to the hello string defined in the strings.xml
+file, which is "Hello World"-->
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="showToast"
+        android:text="@string/button_label_toasst"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="97dp"
+        android:layout_height="200dp"
+        android:text="@string/count_initial_value"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
+</androidx.constraintlayout.widget.ConstraintLayout>

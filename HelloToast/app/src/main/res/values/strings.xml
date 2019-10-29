@@ -1,0 +1,10 @@
+<!--The strings.xml file is located in the res/values folder and it contains
+all the text that your application uses. For example, the names of buttons,
+labels, default text, and similar types of strings go into this file.-->
+<resources>
+    <string name="app_name">Hello Toast</string>
+    <string name="button_label_toasst">Toast</string>
+    <string name="button_label_count">Count</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast</string>
+</resources>
