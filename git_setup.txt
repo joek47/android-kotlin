@@ -1,3 +1,5 @@
+https://jackgruber.github.io/2018-08-25-synology-gitserver/
+
 1. Installing Git Server
 
     Got to Package Center on Synology and install Git Server
