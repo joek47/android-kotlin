@@ -1,4 +1,6 @@
 https://jackgruber.github.io/2018-08-25-synology-gitserver/
+https://jigarius.com/blog/multiple-git-remote-repositories
+https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
 
 1. Installing Git Server
 
