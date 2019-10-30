@@ -14,11 +14,14 @@ class MainActivity : AppCompatActivity() {
 //    private lateinit var binding: ActivityMainBinding
     private lateinit var binding: ActivityMainBinding
 
+    // Instance of MyName data class.
+    private val myName: MyName = MyName("Small Bang Bang")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
 
 //        findViewById<Button>(R.id.done_button).setOnClickListener {
 ////            set done button to invisible
@@ -40,7 +43,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply{
 //            nickname_text.text = binding.nicknameEdit.text
-            nickname_text.text = binding.nicknameEdit.text
+            myName?.nickname = nicknameEdit.text.toString()
+            // Invalidate all binding expressions and request a new rebind to refresh UI
+            invalidateAll()
             nickname_edit.visibility = View.GONE
             done_button.visibility = View.GONE //view button gone
             nickname_text.visibility = View.VISIBLE
@@ -51,3 +56,5 @@ class MainActivity : AppCompatActivity() {
         imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }
+
+data class MyName(var name: String = "", var nickname: String = "")
