@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         val clickableViews: List<View> = listOf(
             box_one_text, box_two_text,
-            box_three_text, box_four_text, box_five_text
+            box_three_text, box_four_text, box_five_text,
+            red_button, yellow_button, green_button
         )
 
         for (i in clickableViews) {
@@ -30,10 +31,14 @@ class MainActivity : AppCompatActivity() {
         when (view.id) {
             R.id.box_one_text -> view.setBackgroundColor(Color.DKGRAY)
             R.id.box_two_text -> view.setBackgroundColor(Color.GRAY)
-//            R.id.box_three_text -> view.setBackgroundColor(Color.GRAY)
             R.id.box_three_text -> view.setBackgroundResource(android.R.color.holo_green_light)
             R.id.box_four_text -> view.setBackgroundResource(android.R.color.holo_green_dark)
             R.id.box_five_text -> view.setBackgroundResource(android.R.color.holo_orange_light)
+
+            // boxes
+            R.id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
+            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
+            R.id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
             else -> view.setBackgroundColor(Color.LTGRAY)
 
         }
